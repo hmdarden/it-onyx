@@ -1,0 +1,86 @@
+/*---------------------Box Sizing---------------------*/
+
+html{
+    box-sizing: border-box; 
+   }
+   *,
+   *:before,
+   *:after{
+     box-sizing: inherit;
+   }
+   
+   /*-----------------Responsive Images-------------------*/
+   
+   img{
+     max-width:100%;
+     height:auto;
+   }
+   
+   /*-------------------Global Styles--------------------*/
+   
+   body {
+     font-family: 'Source Code Pro', monospace;
+     margin: 0;
+     background-color: black;
+     color: #fff;
+   }
+   
+   /*-----------------------Header--------------------------*/
+   
+   header.primary {
+     background-color: #B80006;
+     text-align: center;
+     color: #fff;
+     text-shadow: 2px 2px #000000;
+     padding: 6em 2em;
+     position: relative;
+     border-bottom:solid;
+     border-width:6px;
+     border-color:black;
+   }
+   
+   header.primary::before{
+     content: "";
+     background-image: url("https://images.squarespace-cdn.com/content/v1/5a6ffba690bcce204dea4918/1546376731950-UEKDI7P57KYBN4EEWW71/image-asset.jpeg?format=1000w");
+     background-size: cover;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+     opacity: .5;
+   }
+   
+   header.primary h1{
+     display: block;
+     width: 449px;
+     height: 70px;
+     margin: 0 auto;
+     text-indent: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+   }
+   
+   /*-----------------------Content--------------------------*/
+   
+   #content{
+     font-size:1.02em;
+   }
+   
+   #content img{
+     width: 100%;
+   }
+   
+   #content h2{
+     text-align:center;
+     font-size:1.7em;
+   }
+   
+   #content h3{
+     text-align:center;
+     font-size:1.2em;
+   }
+   
+   #content p{
+     margin: 20px;
+   }
