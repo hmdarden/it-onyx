@@ -1,5 +1,5 @@
 body{
-    background-color:darkgray;
+    background-color:rgb(255, 131, 49);
 }
 
 img{
@@ -35,9 +35,15 @@ img{
     color:black;
 }
 
-.card{
+.beach{
     height:300px;
-    display: grid;
-    grid-template-columns: 180px 1fr;
     padding:2rem;
+}
+
+img{
+    border-radius:40px;
+}
+
+h2{
+    text-align:center;
 }
