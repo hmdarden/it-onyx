@@ -1,4 +1,80 @@
-.formcontainer {
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Polygon - Company Details">
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+    <meta name="author" content="Bruce Bauer">
+    <title>Currency Value Conversion</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="myform">
+        <div class="formcontainer">
+            <h1>Currency Value History</h1>
+            <label for="StockSymbol" class="formlabel" >Base Currency: </label>
+            <!--<label for="DisplayStock" class="formlabel" ></label>-->
+            <select type="text" id="StockSymbol" name="StockSymbol" data-rule-required="true"  data-msg-required="Base Currency is Required">
+              <option value="">Select a Currency...</option>
+              <option value="USD">US Dollar</option>
+              <option value="NOK">Norwegian Krone</option>
+              <option value="RUB">Russian Ruble</option>
+              <option value="EUR">Euro Dollar</option>
+              <option value="MXN">Mexican Peso</option>
+            </select>
+            <label class="error" for="StockSymbol" id="StockSymbolError"></label><br>
+          <label for="StockSymbol2" class="formlabel" >Convert to Currency: </label>
+            <!--<label for="DisplayStock" class="formlabel" ></label>-->
+            <select type="text" id="StockSymbol2" name="StockSymbol2" data-rule-required="true"  data-msg-required="Convert To Currency is Required">
+              <option value="">Select a Currency...</option>
+              <option value="USD">US Dollar</option>
+              <option value="NOK">Norwegian Krone</option>
+              <option value="RUB">Russian Ruble</option>
+              <option value="EUR">Euro Dollar</option>
+              <option value="MXN">Mexican Peso</option>
+            </select>
+            <label class="error" for="StockSymbol2" id="StockSymbol2Error"></label><br>
+            <label class="formlabel">From Date:</label>
+            <input type="date" name="FromDate" id="FromDate" 
+                data-rule-required="true" data-msg-required="From Date is Required">
+            <label id="FromDateError" for="FromDate" class="error"></label>
+            <br>
+            <label class="formlabel">To Date:</label>
+            <input type="date" name="ToDate" id="ToDate" 
+			     data-rule-required="true" data-msg-required="To Date is Required">
+		    <label id="ToDateError" for="ToDate" class="error"></label>
+            <br><br>
+            <input type="button" value="Show Results" id="DisplayStock" name="DisplayStock" onclick="GetStock();">
+            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+
+            <div class="clearfix">
+                <div class="img-container">
+                    <span id="StockValueTable"></span>
+                </div>
+                <div class="img-container">
+                    <span id="StockVolumeTable"></span>
+                </div>
+            </div>
+            <hr>
+            
+            <div class="clearfix">
+                <div class="img-container">
+                    <canvas id="chartjs-0" width="400" height="400"></canvas>
+                </div>
+                <div class="img-container">
+                    <canvas id="chartjs-1" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>.formcontainer {
     width: 1000px;
     padding: 5px;
 }
