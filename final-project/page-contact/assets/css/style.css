@@ -181,6 +181,10 @@ padding:0;
       padding: 2px;
       }
 
+      .contact-banner h1{
+        font-size: 2.6rem;
+      }
+
     .footer a {
       float: none;
       display: block;

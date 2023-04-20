@@ -165,7 +165,9 @@ padding:0;
   padding-left:100px;
 }
 
-
+#faq p{
+  font-size:.7rem;
+}
 
 
 .footer{
@@ -250,6 +252,14 @@ padding:0;
 
   #content p{
     line-height:20px;
+  }
+
+  #faq h2{
+    font-size:1.8rem;
+  }
+
+  #faq summary{
+    font-size:1.0rem;
   }
 
   .footer a {
