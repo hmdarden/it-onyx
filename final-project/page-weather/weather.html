@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RiverLevels">
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+    <meta name="author" content="Alyson Neighbors">
+    <title>Weather | The Buffalo Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="GetData()">
+    <main>
+        <header class="primary container">
+          <div>
+            <img src="assets/img/logo.png" class="logo" alt="Buffalo Experience Logo">
+            </div>
+              <div id="nav" class="header-right">
+                <a href="../index.html">Home</a>
+                <a href="../page-rental/rental.html">Rentals</a>
+                <a href="../page-weather/weather.html">Weather</a>
+                <a href="../page-about/about.html">About</a>
+                <a href="../page-contact/contact.html">Contact Us</a>
+              </div>
+            </header>
+
+            <section id="river" class="container-river">
+                <div class="river-banner">
+                 <h1><a href="index.html">River Levels</a></h1>
+                </div>
+            </section>
+            
+
+            <div class="flex-container">
+              <div class="img-container">
+                  <canvas id="chartjs-0" width="400" height="400"></canvas>
+              </div>
+              <div class="img-container">
+                  <canvas id="chartjs-1" width="400" height="400"></canvas>
+              </div>
+              <div class="img-container">
+                  <canvas id="chartjs-2" width="400" height="400"></canvas>
+              </div>
+              <div class="img-container">
+                  <canvas id="chartjs-3" width="400" height="400"></canvas>
+                </div>
+            </div>
+
+    <a class="weatherwidget-io" href="https://forecast7.com/en/36d01n93d19/jasper/?unit=us" data-label_1="BUFFALO RIVER" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-theme="pure" data-highcolor="#882533" data-suncolor="#CB7647" >BUFFALO RIVER WEATHER</a>          
+    <div class="footer">
+      <div class="footer-left">
+        <img src="assets/img/logo.png" class="logo" alt="Buffalo Experience Logo">
+        <a href="../page-contact/contact.html">Contact Us</a>
+        <a href="../page-about/about.html">About</a>
+        <a href="../page-weather/">Weather</a>
+        <a href="../page-rental/rental.html">Rentals</a>
+        <a href="../index.html">Home</a><br>
+    <br><br><a href="tel:+5555555555">Call: (555)555-5555</a>
+    <a href="mailto:contact@thebuffaloexperience.com">Email</a>
+    <br>
+      </div>
+        <div class="footer-right">
+        <br><br><a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-google"></a>
+      </div>
+    </div>
+      </div>
+      <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/js/river.js"></script>
+    </main>
+</body>
+</html>
