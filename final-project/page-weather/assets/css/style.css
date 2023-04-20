@@ -16,7 +16,6 @@ body{background-color: #65333A;
 
 main{
   background-color: #C4AF9B;
-  width:80vw;
   max-width:1140px;
   margin:auto;
 }
@@ -314,14 +313,6 @@ iframe{
  margin: 0 auto;
 }
 
- .map{
-  font-size: 3.2rem;
-  background-color: #CB7637;
-  text-align: center;
-  color:white;
-  padding-top: 15px;
-}
-
 .weatherwidget-io{
   width: 100%;
 }
@@ -358,6 +349,15 @@ iframe{
 }
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
+
+  .container{
+    padding: 2px;
+    }
+
+    .river-banner h1{
+      font-size: 2.6rem;
+    }
+
   .footer a {
     float: none;
     display: block;

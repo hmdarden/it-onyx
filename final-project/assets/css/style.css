@@ -17,7 +17,6 @@ font-family: 'Roboto', sans-serif;
 
 main{
 background-color: #C4AF9B;
-width:80vw;
 max-width:1140px;
 margin:auto;
 }
@@ -94,7 +93,6 @@ float:left;
   font-size:2.6rem;
   padding-top:80px
 }
-
 
 .jumbotron .jumbotron-inner p{
   padding: 10px 20px 20px 1px;
@@ -337,8 +335,12 @@ color: white;
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
 
+  .container{
+    padding: 2px;
+    }
+
   .map{
-    font-size:1.6rem;
+    font-size:2.6rem;
     padding-top:10px
   }
 

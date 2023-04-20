@@ -21,7 +21,6 @@ body{
 
 main{
   background-color: #C4AF9B;
-  width:80vw;
   max-width:1140px;
   margin:auto;
 }
@@ -177,6 +176,11 @@ padding:0;
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
+
+    .container{
+      padding: 2px;
+      }
+
     .footer a {
       float: none;
       display: block;

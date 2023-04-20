@@ -21,7 +21,6 @@ body{
 
 main{
   background-color: #C4AF9B;
-  width:80vw;
   max-width:1140px;
   margin:auto;
 }
@@ -112,18 +111,6 @@ padding:0;
     text-decoration: none;
     display: block;
     margin: 0 auto;
-  }
-  
-  .container-about details{
-    font-size:1.2rem;
-    text-align:center;
-    width:70vw;
-    max-width:900px;
-    margin:40px auto;
-  }
-  
-  .container-about details summary{
-    font-size:3.2rem;
   }
   
 
@@ -248,6 +235,23 @@ padding:0;
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
+
+  .container{
+    padding: 2px;
+    }
+
+  .about-banner h1{
+    font-size:2.6rem;
+  }
+
+  #content {
+    font-size: .7rem;
+  }
+
+  #content p{
+    line-height:20px;
+  }
+
   .footer a {
     float: none;
     display: block;

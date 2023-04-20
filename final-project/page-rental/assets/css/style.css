@@ -21,7 +21,6 @@ html{
   
   main{
   background-color: #fff;
-  width:80vw;
   max-width:1140px;
   margin:auto;
   }
@@ -341,6 +340,43 @@ table tr:hover{
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
+
+  .container{
+    padding: 2px;
+    }
+
+ .container-cabins details{
+    font-size:.8rem;
+  }
+
+  .container-cabins details summary{
+    font-size:1.6rem;
+  }
+
+  .container-canoes details{
+    font-size:.8rem;
+  }
+
+  .container-canoes details summary{
+    font-size:1.6rem;
+  }
+
+  .canoes-banner h1{
+    font-size:2.6rem;
+  }
+
+  .cabins-banner h1{
+    font-size:2.6rem;
+  }
+
+  .shuttles-banner h1{
+    font-size:2.6rem;
+  }
+
+  .container-shuttles p, table{
+    font-size:.8rem;
+  }
+
   .footer a {
     float: none;
     display: block;
