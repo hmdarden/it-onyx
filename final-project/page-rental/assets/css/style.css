@@ -128,7 +128,37 @@ html{
 }
 
 
-
+.popup{
+  background-color: #CB7647;
+  width: 450px;
+  padding: 10px 20px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  display: none;
+  text-align: center;
+  color: #fff;
+}
+.popup button{
+  display: block;
+  margin:  0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.popup p{
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+  text-align: center;
+}
 
 
 .cabins-banner{
