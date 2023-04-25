@@ -169,10 +169,6 @@ height: auto;
   padding-left:100px;
 }
 
-#faq p{
-  font-size:.7rem;
-}
-
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -303,6 +299,10 @@ height: auto;
 
   #faq summary{
     font-size:1.0rem;
+  }
+
+  #faq p{
+    font-size:0.8rem;
   }
 
   .footer a {
