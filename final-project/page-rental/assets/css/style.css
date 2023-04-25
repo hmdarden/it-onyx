@@ -379,6 +379,13 @@ table tr:hover{
     flex-direction: column;
   }
   
+  header .logo{
+    float: none;
+    margin: auto;
+    display: block;
+    padding-left: 0%;
+  }
+
   .logo{
     float:none;
     margin: auto;
