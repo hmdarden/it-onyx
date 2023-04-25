@@ -255,6 +255,10 @@ html{
   text-shadow: none;
 }
 
+.container-shuttles p{
+  margin-bottom: 15px;
+}
+
 .container-shuttles table{
   width:100%;
   border:1px solid #fff;
@@ -479,6 +483,9 @@ table tr:hover{
     padding-top:10px
   }
   
+.popup{
+  width:250px;
+}
 
   }
 
