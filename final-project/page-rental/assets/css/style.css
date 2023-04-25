@@ -217,7 +217,7 @@ html{
   color: #ffffff;
   text-shadow: 2px 2px #000000;
   /* Shorhand T,R,B,L*/
-  padding: 6em 2em;
+  padding: 2em;
   position: relative;
 }
 
@@ -235,7 +235,7 @@ html{
 .shuttles-banner h1{
   font-size: 4.2rem;
   text-transform:uppercase;
-  margin: 50px 10px 20px 10px;
+  margin: 30px 10px 20px 10px;
   position: relative;
   text-align:center;
 }
