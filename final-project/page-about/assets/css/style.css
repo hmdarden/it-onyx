@@ -1,8 +1,11 @@
-*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+html{
+  box-sizing: border-box; 
+ }
+ *, *:before, *:after{
+  margin:0px;
+padding: 0px;
+   box-sizing: inherit;
+ }
 
 img{
   max-width:100%;
@@ -61,13 +64,8 @@ header.primary{
 
 /* Float the link section to the right */
 
-header.primary nav ul{
-list-style-type: none;
-padding:0;
-}
  
 .logo{
-  float:left;
       max-width: 200px;
       height: auto;
   }
@@ -169,6 +167,12 @@ padding:0;
   font-size:.7rem;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .footer{
   overflow: hidden;
@@ -197,7 +201,7 @@ padding:0;
 
 /* Float the link section to the right */
 .footer-right {
-  display:block;
+  float: right;
 }
 .clearfix {
   overflow: auto;
@@ -236,6 +240,39 @@ padding:0;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+@media screen and (max-width: 750px){
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo{
+    float:none;
+    margin: auto;
+    display: block;
+    padding-left: 0%;
+  }
+  
+  .header-right{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin:0 auto;
+  }
+  
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+  }
+
 @media screen and (max-width: 500px) {
 
   .container{
@@ -263,7 +300,6 @@ padding:0;
   }
 
   .footer a {
-    float: none;
     display: block;
     text-align: left;
   }
@@ -286,10 +322,4 @@ padding:0;
       height: auto;
   }
  
-  }
-
-  @media screen and (max-width: 500px) {
-    .jumbotron{
-      height: auto;
-  }
   }

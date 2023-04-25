@@ -1,9 +1,9 @@
 html{
     box-sizing: border-box; 
    }
-   *,
-   *:before,
-   *:after{
+   *, *:before, *:after{
+    margin:0px;
+  padding: 0px;
      box-sizing: inherit;
    }
   
@@ -62,13 +62,7 @@ html{
   
   /* Float the link section to the right */
   
-  header.primary nav ul{
-  list-style-type: none;
-  padding:0;
-  }
-  
   .logo{
-    float:left;
     max-width: 200px;
     height: auto;
   }
@@ -134,9 +128,9 @@ html{
   position: absolute;
   transform: translate(-50%,-50%);
   left: 50%;
-  top: 50%;
+  top: 100%;
   border-radius: 8px;
-  font-family: "Poppins",sans-serif;
+  font-family: "Roboto",sans-serif;
   display: none;
   text-align: center;
   color: #fff;
@@ -271,7 +265,12 @@ table tr:hover{
   background-color:rgba(101,51,58,.4);
 }
 
-
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
   
 .footer{
   overflow: hidden;
@@ -300,15 +299,15 @@ table tr:hover{
 
 /* Float the link section to the right */
 .footer-right {
-  display:block;
+  float: right;
 }
+
 .clearfix {
   overflow: auto;
 }
 
 /* Style all font awesome icons */
 .fa{
-  float: right;
   padding:20px;
   font-size:30px;
   width:50px;
@@ -339,6 +338,68 @@ table tr:hover{
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+@media screen and (max-width: 900px) {
+  .jumbo-img{
+    float:none;
+    margin: auto;
+    display: block;
+    padding-left: 0%;
+  }
+
+  .jumbotron .jumbotron-inner p{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.jumbotron .jumbotron-inner h1{
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.jumbotron-btn{
+  padding-bottom: 20px;
+}
+
+}
+
+
+@media screen and (max-width: 750px){
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo{
+    float:none;
+    margin: auto;
+    display: block;
+    padding-left: 0%;
+  }
+  
+  .header-right{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin:0 auto;
+  }
+  
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+  }
+  
+
+
 @media screen and (max-width: 500px) {
 
   .container{
@@ -378,7 +439,6 @@ table tr:hover{
   }
 
   .footer a {
-    float: none;
     display: block;
     text-align: left;
   }
@@ -401,11 +461,11 @@ table tr:hover{
       height: auto;
   }
  
-  }
-
-  @media screen and (max-width: 500px) {
-    .jumbotron{
-      height: auto;
-  }
+  .map{
+    font-size:2.6rem;
+    padding-top:10px
   }
   
+
+  }
+
