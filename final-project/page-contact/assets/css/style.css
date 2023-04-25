@@ -69,10 +69,16 @@ list-style-type: none;
 padding:0;
 }
  
+header .logo{
+  float: left;
+  max-width: 200px;
+  height: auto;
+}
+
 .logo{
-      max-width: 200px;
-      height: auto;
-  }
+max-width: 200px;
+height: auto;
+}
 
   .header-right {
     float: right;

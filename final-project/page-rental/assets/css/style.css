@@ -62,10 +62,16 @@ html{
   
   /* Float the link section to the right */
   
-  .logo{
+  header .logo{
+    float: left;
     max-width: 200px;
     height: auto;
-  }
+}
+
+.logo{
+  max-width: 200px;
+  height: auto;
+}
   
   .header-right {
     float: right;
