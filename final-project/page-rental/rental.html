@@ -25,7 +25,7 @@
             <a href="../page-rental/rental.html">Rentals</a>
             <a href="../page-weather/weather.html">River Levels</a>
             <a href="../page-about/about.html">About</a>
-            <a href="../page-contact/contact.html">Contact Us</a>
+            <a href="../page-contact/contact.html">Contact</a>
           </nav>
     </header>
       
@@ -37,7 +37,7 @@
        </div>
        <details>
         <summary>For More Information</summary>
-        <p>Our outfitter uses <a href="https://buffalocanoemanufacturing.com/">Buffalo Canoes</a>, which are manufactured right here in Newton County Arkansas.</p>
+        <p id= "links">Our outfitter uses <a href="https://buffalocanoemanufacturing.com/">Buffalo Canoes</a>, which are manufactured right here in Newton County Arkansas.</p>
         <br>                                                                                
         <rentle-store shop="thebuffaloexperience" product="lGIaea2CaYIud5PgUxsF"/>
        </details>
@@ -50,7 +50,7 @@
       </div>
       <details>
        <summary>For More Information</summary>
-       <p>Bear Ridge offers two guests a cozy, fully furnished cabin for a romantic getaway in upper Buffalo River country. The cabin has a main floor and sleeping loft with a queen-size bed. We are pleased to offer complimentary WIFI with this cabin rental. The cabin's kitchen features a dining bar and is fully furnished with appliances, basic meal prep utensils and cookware, a coffee maker and even a dishwasher. In the cabin's bathroom, you'll find a lovely stone walk-in shower, along with towels, soap, and shampoo.</p>
+       <p id= "links">Bear Ridge offers two guests a cozy, fully furnished cabin for a romantic getaway in upper Buffalo River country. The cabin has a main floor and sleeping loft with a queen-size bed. We are pleased to offer complimentary WIFI with this cabin rental. The cabin's kitchen features a dining bar and is fully furnished with appliances, basic meal prep utensils and cookware, a coffee maker and even a dishwasher. In the cabin's bathroom, you'll find a lovely stone walk-in shower, along with towels, soap, and shampoo. For directions, click <a href="../index.html#map">HERE</a>.</p>
        <br> 
        <h2>Bear Ridge</h2>                                                                             
        <rentle-store shop="thebuffaloexperience" product="p2jCM82Gd3wDhZYW1WCN"/>
@@ -60,7 +60,7 @@
    <div class="popup">
     <button id="close">&times;</button>
     <h2>ALERT</h2>
-    <p>
+    <p id= "links">
         PLEASE MAKE SURE TO PACK ALL NECESSARY SAFETY EQUIPMENT WHEN PLANNING YOUR TRIP. VIEW MORE ON BUFFALO RIVER SAFETY <a href="https://www.nps.gov/buff/planyourvisit/safety.htm">HERE</a>.
     </p>
   </div>
@@ -68,7 +68,7 @@
    <section id="shuttles" class="container-shuttles">
     <div class="shuttles-banner">
      <h1>Shuttles</h1>
-    <p>We offer shuttling services to the following put-in/take outs on the river. These prices are in addition to the canoe rental price and cover the shuttle cost of one vehicle. You can calculate float distances and times at the <a href="https://www.nps.gov/buff/planyourvisit/river-accesses-mileage.htm">National Park Service</a> website.</p>
+    <p id= "links">We offer shuttling services to the following put-in/take outs on the river. These prices are in addition to the canoe rental price and cover the shuttle cost of one vehicle. You can calculate float distances and times at the <a href="https://www.nps.gov/buff/planyourvisit/river-accesses-mileage.htm">National Park Service</a> website.</p>
     <table>
         <caption>From Ponca To:</caption>
       <tr>
@@ -103,45 +103,10 @@
   </div>
  </section>
 
+ <a class="weatherwidget-io" href="https://forecast7.com/en/35d97n93d37/72670/?unit=us" data-label_1="PONCA" data-label_2="WEATHER" data-font="Roboto" data-theme="original" data-basecolor="#c4af9b" data-highcolor="#fff" data-lowcolor="#65333a" data-raincolor="#218BB8" >PONCA WEATHER</a>
  <script>
-  (function(d, s, id) {
-      if (d.getElementById(id)) {
-          if (window.__TOMORROW__) {
-              window.__TOMORROW__.renderWidget();
-          }
-          return;
-      }
-      const fjs = d.getElementsByTagName(s)[0];
-      const js = d.createElement(s);
-      js.id = id;
-      js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-      fjs.parentNode.insertBefore(js, fjs);
-  })(document, 'script', 'tomorrow-sdk');
-  </script>
-
-  <div class="tomorrow"
-     data-location-id="204915"
-     data-language="EN"
-     data-unit-system="IMPERIAL"
-     data-skin="light"
-     data-widget-type="upcoming"
-     style="padding-bottom:22px;position:relative;"
-  >
-    <a
-      href="https://www.tomorrow.io/weather-api/"
-      rel="nofollow noopener noreferrer"
-      target="_blank"
-      style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-    >
-      <img
-        alt="Powered by the Tomorrow.io Weather API"
-        src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-        width="250"
-        height="18"
-      />
-    </a>
-  </div>
+ !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+ </script>
 
  <footer class="footer">
   <img src="assets/img/logo.png" class="logo" alt="Buffalo Experience Logo">
@@ -150,9 +115,10 @@
     <a href="../page-rental/rental.html">Rentals</a>
     <a href="../page-weather/weather.html">River Levels</a>
     <a href="../page-about/about.html">About</a>
-    <a href="../page-contact/contact.html">Contact Us</a>
+    <a href="../page-contact/contact.html">Contact</a>
     <a href="tel:+5555555555">Call: (555)555-5555</a>
     <a href="mailto:contact@thebuffaloexperience.com">Email</a>
+    
   </nav>
   <div class="footer-right">
     <a href="#" class="fa fa-facebook"></a>
@@ -166,6 +132,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.03/jquery.cycle.all.min.js"></script>
         <script src="assets/js/local-calls.js"></script>
         <script src="assets/js/slideshow.js"></script>
-  </main>  
+  </main> 
+  <footer id="top-link" role="contentinfo">
+    <a href="#top">Back to Top</a></h6>
+  </footer>
 </body>
 </html>

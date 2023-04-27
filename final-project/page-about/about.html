@@ -23,7 +23,7 @@
               <a href="../page-rental/rental.html">Rentals</a>
               <a href="../page-weather/weather.html">River Levels</a>
               <a href="../page-about/about.html">About</a>
-              <a href="../page-contact/contact.html">Contact Us</a>
+              <a href="../page-contact/contact.html">Contact</a>
             </nav>
       </header>
 
@@ -43,7 +43,7 @@
               <p>With every canoe rental, we provide life jackets and mesh litter bags.</p></details>
           <details>
             <summary>Are there rules for visiting the Buffalo River?</summary>
-              <p>There is! Visit: <a href="https://www.nps.gov/buff/planyourvisit/safety.htm">National Park Service</a> website for more information on river safety and etiquette.</p></details>
+              <p id= "links">There is! Visit: <a href="https://www.nps.gov/buff/planyourvisit/safety.htm">National Park Service</a> website for more information on river safety and etiquette.</p></details>
           <details>
             <summary>How often are river levels updated?</summary>
               <p>Daily, however you should also check your forecast app or tv channel for any updates on the upcoming weather.</p></details>
@@ -58,45 +58,10 @@
               <p>Make sure to bring sunscreen, bug spray, water, and snacks. Also make sure to bring sturdy footwear if you plan on hiking!</p></details>
           </section>
 
+          <a class="weatherwidget-io" href="https://forecast7.com/en/35d97n93d37/72670/?unit=us" data-label_1="PONCA" data-label_2="WEATHER" data-font="Roboto" data-theme="original" data-basecolor="#c4af9b" data-highcolor="#fff" data-lowcolor="#65333a" data-raincolor="#218BB8" >PONCA WEATHER</a>
           <script>
-            (function(d, s, id) {
-                if (d.getElementById(id)) {
-                    if (window.__TOMORROW__) {
-                        window.__TOMORROW__.renderWidget();
-                    }
-                    return;
-                }
-                const fjs = d.getElementsByTagName(s)[0];
-                const js = d.createElement(s);
-                js.id = id;
-                js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-    
-                fjs.parentNode.insertBefore(js, fjs);
-            })(document, 'script', 'tomorrow-sdk');
-            </script>
-    
-            <div class="tomorrow"
-               data-location-id="204915"
-               data-language="EN"
-               data-unit-system="IMPERIAL"
-               data-skin="light"
-               data-widget-type="upcoming"
-               style="padding-bottom:22px;position:relative;"
-            >
-              <a
-                href="https://www.tomorrow.io/weather-api/"
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-                style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-              >
-                <img
-                  alt="Powered by the Tomorrow.io Weather API"
-                  src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-                  width="250"
-                  height="18"
-                />
-              </a>
-            </div>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          </script>
 
           <footer class="footer">
             <img src="assets/img/logo.png" class="logo" alt="Buffalo Experience Logo">
@@ -105,7 +70,7 @@
               <a href="../page-rental/rental.html">Rentals</a>
               <a href="../page-weather/weather.html">River Levels</a>
               <a href="../page-about/about.html">About</a>
-              <a href="../page-contact/contact.html">Contact Us</a>
+              <a href="../page-contact/contact.html">Contact</a>
               <a href="tel:+5555555555">Call: (555)555-5555</a>
               <a href="mailto:contact@thebuffaloexperience.com">Email</a>
             </nav>
@@ -115,7 +80,9 @@
               <a href="#" class="fa fa-google"></a>
           </div>
           </footer>
-          
     </main>
+    <footer id="top-link" role="contentinfo">
+      <a href="#top">Back to Top</a></h6>
+    </footer>
         </body>
         </html>

@@ -10,12 +10,13 @@ padding: 0px;
 .container{
   margin:auto;
   padding: 0 40px 40px 40px;
-  
   }
 
 
-body{background-color: #65333A;
-  font-family: 'Roboto', sans-serif;}
+body{
+  background-color: #65333A;
+  font-family: 'Roboto', sans-serif;
+}
 
 main{
   background-color: #C4AF9B;
@@ -120,7 +121,8 @@ height: auto;
     color: #f1f1f1;
     margin-right: 10px;
     margin-top: 10px;
-    text-decoration: none;}
+    text-decoration: none;
+  }
 
     .jumbo-img{
       float:right;
@@ -351,6 +353,16 @@ iframe{
   background: #94605A;
   color: white;
 }
+
+#top-link{
+  text-align: center;
+}
+
+#top-link a:link, #top-link a:visited{
+color: #fff;
+text-decoration: none;
+}
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 
 @media screen and (max-width: 900px) {

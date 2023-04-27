@@ -199,14 +199,14 @@ cursor: pointer;
 height: 15px;
 width: 15px;
 margin: 0 2px;
-background-color: #bbb;
+background-color: #79845B;
 border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-background-color: #717171;
+background-color: #65333A;
 }
 
 /* Fading animation */
@@ -350,6 +350,15 @@ color: white;
 .fa-google{
 background: #94605A;
 color: white;
+}
+
+#top-link{
+  text-align: center;
+}
+
+#top-link a:link, #top-link a:visited{
+color: #fff;
+text-decoration: none;
 }
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 

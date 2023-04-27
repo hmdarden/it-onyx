@@ -24,7 +24,7 @@
               <a href="../page-rental/rental.html">Rentals</a>
               <a href="../page-weather/weather.html">River Levels</a>
               <a href="../page-about/about.html">About</a>
-              <a href="../page-contact/contact.html">Contact Us</a>
+              <a href="../page-contact/contact.html">Contact</a>
             </nav>
       </header>
 
@@ -50,45 +50,10 @@
                 </div>
             </div>
 
+            <a class="weatherwidget-io" href="https://forecast7.com/en/35d97n93d37/72670/?unit=us" data-label_1="PONCA" data-label_2="WEATHER" data-font="Roboto" data-theme="original" data-basecolor="#c4af9b" data-highcolor="#fff" data-lowcolor="#65333a" data-raincolor="#218BB8" >PONCA WEATHER</a>
             <script>
-              (function(d, s, id) {
-                  if (d.getElementById(id)) {
-                      if (window.__TOMORROW__) {
-                          window.__TOMORROW__.renderWidget();
-                      }
-                      return;
-                  }
-                  const fjs = d.getElementsByTagName(s)[0];
-                  const js = d.createElement(s);
-                  js.id = id;
-                  js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-      
-                  fjs.parentNode.insertBefore(js, fjs);
-              })(document, 'script', 'tomorrow-sdk');
-              </script>
-      
-              <div class="tomorrow"
-                 data-location-id="204915"
-                 data-language="EN"
-                 data-unit-system="IMPERIAL"
-                 data-skin="light"
-                 data-widget-type="upcoming"
-                 style="padding-bottom:22px;position:relative;"
-              >
-                <a
-                  href="https://www.tomorrow.io/weather-api/"
-                  rel="nofollow noopener noreferrer"
-                  target="_blank"
-                  style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-                >
-                  <img
-                    alt="Powered by the Tomorrow.io Weather API"
-                    src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-                    width="250"
-                    height="18"
-                  />
-                </a>
-              </div>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
    
     <footer class="footer">
       <img src="assets/img/logo.png" class="logo" alt="Buffalo Experience Logo">
@@ -97,7 +62,7 @@
         <a href="../page-rental/rental.html">Rentals</a>
         <a href="../page-weather/weather.html">River Levels</a>
         <a href="../page-about/about.html">About</a>
-        <a href="../page-contact/contact.html">Contact Us</a>
+        <a href="../page-contact/contact.html">Contact</a>
         <a href="tel:+5555555555">Call: (555)555-5555</a>
         <a href="mailto:contact@thebuffaloexperience.com">Email</a>
       </nav>
@@ -115,5 +80,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="assets/js/river.js"></script>
     </main>
+    <footer id="top-link" role="contentinfo">
+      <a href="#top">Back to Top</a></h6>
+    </footer>
 </body>
 </html>
